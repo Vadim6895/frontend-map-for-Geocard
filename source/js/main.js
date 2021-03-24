@@ -35,13 +35,6 @@ const addInteraction = () => {
   map.addInteraction(draw);
 };
 
-const button = document.querySelector('.button');
-console.log(button);
-button.addEventListener('click', () => {
-  map.removeInteraction(draw);
-  addInteraction();
-});
-
 document.addEventListener('click', func);
 function func(event) {
   if (event.shiftKey) {
